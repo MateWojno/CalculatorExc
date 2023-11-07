@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    padding: 18px;
+    background-color: rgba(200,200,200, 0.8);
+    border-radius: 16px;
+}
+
+.display {
+    background-color: #555;
+    height: 90px;
+    width: 300px;
+    margin-bottom: 20px;
+    color: rgba(255,255,255, 0.9);
+    text-align: right;
+    font-size: 64px;
+    
+}
+
+.calc-button-row {
+    display: flex;
+}
+
+button {
+    height: 48px;
+    text-align: center;
+    font-size: 32px;
+    flex: 1 0;
+}
+
+.number {
+    color: #333;
+    background-color: #dadada;
+}
+
+.operator-c {
+    color: #efefef;
+    background-color: rgba(230, 22, 35, 1);
+}
+.operator {
+    color: #efefef;
+    background-color: orange;
+}
