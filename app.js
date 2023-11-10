@@ -8,10 +8,10 @@ const display = document.querySelector(".display");
 function updateDisplay(input) {
     var displayValue = display.textContent;
     if ( 
-    display.textContent.slice(-1) === '*' ||
-    display.textContent.slice(-1) === '/' ||
-    display.textContent.slice(-1) === '+' ||
-    display.textContent.slice(-1) === '-' 
+        display.textContent.slice(-1) === '*' ||
+        display.textContent.slice(-1) === '/' ||
+        display.textContent.slice(-1) === '+' ||
+        display.textContent.slice(-1) === '-' 
     ) {
         console.log("dupa1");
         // split it to 2 segments:
@@ -37,12 +37,12 @@ function valueSetter(displayValue) {
         displayValue.slice(-1) === '-' 
         ) {
             console.log(displayValue);
-            firstNumArr = displayValue.split(displayValue.slice(-1)); 
+            firstNumArr = displayValue.split(displayValue.slice(-1));
             firstNum = firstNumArr[0];
-            console.log(firstNum); // got first num;
-            return;
+            operator = displayValue.slice(-1);
+            console.log('operator: ', operator, 'firstNum: ', firstNum);
+            return firstNum, operator;
         }
-    console.log('dupa2');
 }
 
 function calcResult(num1, operator, num2) {
@@ -55,7 +55,7 @@ function clearDisplay() {
     firstNum = '';
     operator = '';
     secondNum = '';
-    console.log(firstNum, operator, secondNum);
+    console.log("firstNum: ", firstNum, "operator: ", operator, "secondNum: ", secondNum);
     return display.textContent = '';
 };
 
