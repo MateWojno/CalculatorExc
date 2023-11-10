@@ -1,11 +1,10 @@
-let firstNum = '';
-let operator = '';
-let secondNum = '';
+var firstNum = '';
+var operator = '';
+var secondNum = '';
 
 const display = document.querySelector(".display");
 
 
-// Check if the last character is one of the operators
 function updateDisplay(input) {
     if ( 
     display.textContent.slice(-1) === '*' ||
@@ -26,8 +25,8 @@ function updateDisplay(input) {
     }
        
     display.textContent += input;
-    var displayValue = display.textContent;
-    return displayValue;
+    // var displayValue = display.textContent;
+    // return displayValue;
 };
 
 function calcResult(num1, operator, num2) {
@@ -37,6 +36,9 @@ function calcResult(num1, operator, num2) {
 };
 
 function clearDisplay() {
+    firstNum = '';
+    operator = '';
+    secondNum = '';
     return display.textContent = '';
 };
 
