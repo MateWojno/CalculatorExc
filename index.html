@@ -9,31 +9,32 @@
 <body>
     <div class="wrapper">
         <div class="display">
-            1123231
+
         </div>
         <div class="calc-button-row">
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="operator">&times;</button>
+            <button class="number" onclick="updateDisplay('7')">7</button>
+            <button class="number" onclick="updateDisplay('8')">8</button>
+            <button class="number" onclick="updateDisplay('9')">9</button>
+            <button class="operator" onclick="updateDisplay('*')">&times;</button>
         </div>
         <div class="calc-button-row">
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="operator">&divide;</button>
+            <button class="number" onclick="updateDisplay('4')">4</button>
+            <button class="number" onclick="updateDisplay('5')">5</button>
+            <button class="number" onclick="updateDisplay('6')">6</button>
+            <button class="operator" onclick="updateDisplay('/')">&divide;</button>
         </div>
         <div class="calc-button-row">
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="operator">&plus;</button>
+            <button class="number" onclick="updateDisplay('1')">1</button>
+            <button class="number" onclick="updateDisplay('2')">2</button>
+            <button class="number" onclick="updateDisplay('3')">3</button>
+            <button class="operator" onclick="updateDisplay('+')">&plus;</button>
         </div>
         <div class="calc-button-row">
-            <button class="operator-c">C</button>
-            <button class="number">0</button>
-            <button class="operator">&equals;</button>
-            <button class="operator">&minus;</button>
+            <button class="operator-c" onclick="clearDisplay()">C</button>
+            <button class="number" onclick="updateDisplay('0')">0</button>
+            <button class="operator" onclick="calcResult()">&equals;</button> 
+            <!--  calcResult() func parameters? -->
+            <button class="operator" onclick="updateDisplay('-')">&minus;</button>
         </div>
     </div>
     <script src="./app.js"></script>

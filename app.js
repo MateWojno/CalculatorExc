@@ -2,7 +2,9 @@ let firstNum = '';
 let operator = '';
 let secondNum = '';
 
-let displayValue = '';
+const display = document.querySelector(".display");
+
+
 // input will be string, so parseFloat();
 
 //  target buttons onclick();
@@ -12,10 +14,10 @@ let displayValue = '';
 
 
 
-function updateDisplay(firstNum, operator, secondNum) {
-
-    // Create the functions that populate the display when you click the number buttons. 
-
+function updateDisplay(input) {
+    display.textContent += input;
+    var displayValue = display.textContent;
+    return displayValue;
 };
 
 function calcResult(num1, operator, num2) {
@@ -24,11 +26,13 @@ function calcResult(num1, operator, num2) {
     // use switch 
 };
 
-function clearDisplay(displayValue) {
-    // onclick() "C" button;
+function clearDisplay() {
+    
     return displayValue = '';
 };
 
-function keyboardController {
+function keyboardController() {
     // handle keystrokes
 };
+
+
