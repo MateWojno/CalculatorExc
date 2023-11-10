@@ -5,15 +5,6 @@ let secondNum = '';
 const display = document.querySelector(".display");
 
 
-// input will be string, so parseFloat();
-
-//  target buttons onclick();
-//      get data from buttons,
-//          append firstNum, operator and secondNum on display; 
-//      event listeners;
-
-
-
 function updateDisplay(input) {
     display.textContent += input;
     var displayValue = display.textContent;
@@ -27,8 +18,7 @@ function calcResult(num1, operator, num2) {
 };
 
 function clearDisplay() {
-    
-    return displayValue = '';
+    return display.textContent = '';
 };
 
 function keyboardController() {
