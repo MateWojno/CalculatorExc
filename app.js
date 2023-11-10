@@ -13,16 +13,8 @@ function updateDisplay(input) {
         display.textContent.slice(-1) === '+' ||
         display.textContent.slice(-1) === '-' 
     ) {
-        console.log("dupa1");
-        // split it to 2 segments:
-        //  - 1/ num1;
-        //      - 2/ operator;
         //          parse strings to floats;
         //      if '=' is pressed store num2 and calc result;
-        // split string before the operator, 
-        //  operator and after operator
-        //  and assign it to variables
-        // return displayValue;
         return valueSetter(displayValue);
     }
     display.textContent += input;
@@ -43,9 +35,11 @@ function valueSetter(displayValue) {
             console.log('operator: ', operator, 'firstNum: ', firstNum);
             return firstNum, operator;
         }
+    // set secondNum - how?
 }
 
-function calcResult(num1, operator, num2) {
+function calcResult(firstNum, operator, secondNum) {
+   console.log(firstNum, "... operator: ", operator, "...second num: ", secondNum);
     // parse firstNum, secondNum to float 
     // perform the appropriate operations
     // use switch 
@@ -55,7 +49,6 @@ function clearDisplay() {
     firstNum = '';
     operator = '';
     secondNum = '';
-    console.log("firstNum: ", firstNum, "operator: ", operator, "secondNum: ", secondNum);
     return display.textContent = '';
 };
 
