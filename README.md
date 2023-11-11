@@ -1,5 +1,8 @@
 # Calculator app Odin Project
 
+## You can't use eval function
+`Warning: Executing JavaScript from a string is an enormous security risk. It is far too easy for a bad actor to run arbitrary code when you use eval(). See Never use eval()!, below.`
+
 <s>Create the functions that populate the display when you click the number buttons.</s>
 
 
