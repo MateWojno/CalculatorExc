@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="display">
+        <div class="display" id="calculatorDisplay">
         </div>
         <div class="calc-button-row">
             <button class="number" onclick="updateDisplay('7')">7</button>
@@ -31,8 +31,8 @@
         <div class="calc-button-row">
             <button class="operator-c" onclick="clearDisplay()">C</button>
             <button class="number" onclick="updateDisplay('0')">0</button>
-            <button class="operator" onclick="calcResult(firstNum, operator, secondNum)">&equals;</button> 
-            <!-- is it right? -->
+            <button class="operator" onclick="calculateResult()">&equals;</button> 
+            <!-- changed to calculateResult() -->
             <button class="operator" onclick="updateDisplay('-')">&minus;</button>
         </div>
     </div>
